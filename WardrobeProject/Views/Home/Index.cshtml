@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="jumbotron slideExpandUp">
+    <h1>MVC First - Wardrobe Application</h1>
+    <p>Web Application that manages the contents of your wardrobe. This app allows users to add, edit, view oe delete content.</p>
+</div>
+
+<div class="row">
+ 
+    <div class="col-md-4">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Dropdown
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+    </div>
+  
+
+
+    @*<div class="col-md-4 slideExpandUp">
+        <h2>Men's</h2>
+        <p>
+            View or add men's clothing starting with shoes.
+        </p>
+        <a href='@Url.Action("Index", "MensShoes")' class="btn btn-default navbar-btn">Mens Shoe's &raquo;</a>
+    </div>*@
+    <div class="col-md-4 slideExpandUp">
+        <h2>Women's</h2>
+        <p>View or add women's clothing starting with shoes.</p>
+        <a href='@Url.Action("Index", "WomensShoes")' class="btn btn-default navbar-btn">Womens Shoe's &raquo;</a>
+    </div>
+    <div class="col-md-4 slideExpandUp">
+        <h2>Outfit's</h2>
+        <p>View or create men's or women's outfits.</p>
+        <a href='@Url.Action("Index", "MensOutfits")' class="btn btn-default navbar-btn">Mens Outfit's &raquo;</a>
+        <a href='@Url.Action("Index", "WomensOutfits")' class="btn btn-default navbar-btn">Womens Outfit's &raquo;</a>
+    </div>
+</div>

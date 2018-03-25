@@ -1,0 +1,25 @@
+﻿@model WardrobeProject.Models.MensSho
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 id="h2-ma">Details</h2>
+
+<div>
+    <h4>Men's Shoe Item</h4>
+    <hr />
+
+    <h1 id="detail-h1"> @Html.DisplayFor(model => model.Name)</h1>
+
+    <div class="images">
+        <img src="@Html.DisplayFor(model => model.Photo)" alt="Alternate Text" />
+    </div>
+
+    <p>@Html.DisplayFor(model => model.Occasion) @Html.DisplayFor(model => model.Color)  @Html.DisplayFor(model => model.Type) for @Html.DisplayFor(model => model.Season) </p>
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MensShoesID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |
+    @Html.ActionLink("Back to List", "Index") <img src="https://png.icons8.com/ultraviolet/20/000000/circled-left.png">
+</p>

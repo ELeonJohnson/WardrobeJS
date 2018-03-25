@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WardrobeProject.Models.WomensSho>
+
+@{
+                /**/
+
+                ViewBag.Title = "Index";
+}
+
+<h2 id="h2-ma">Womens's Shoes</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+
+
+        <div class="col-6">
+            <div class="images">
+                <img src="@Html.DisplayFor(modelItem => item.Photo)" alt="Alternate Text" />
+            </div>
+
+            <div class="icons">
+                @Html.ActionLink("Edit", "Edit", new { id = item.WomensShoesID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |
+                @Html.ActionLink("Details", "Details", new { id = item.WomensShoesID }) <img src="https://png.icons8.com/ultraviolet/20/000000/search.png"> |
+                @Html.ActionLink("Delete", "Delete", new { id = item.WomensShoesID }) <img src="https://png.icons8.com/ultraviolet/20/000000/cancel.png">
+            </div>
+        </div>
+
+
+    }
+</div>
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7e9b4a12ee064a6185e8020cdb16b5f5" Name="Diagram1">
+        <EntityTypeShape EntityType="WardobeProjectModel.MensAccessory" Width="1.5" PointX="9.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardobeProjectModel.MensBottom" Width="1.5" PointX="4.625" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardobeProjectModel.MensOutfit" Width="1.5" PointX="6.625" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardobeProjectModel.MensSho" Width="1.5" PointX="7.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardobeProjectModel.MensTop" Width="1.5" PointX="5.5" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardobeProjectModel.sysdiagram" Width="1.5" PointX="9.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardobeProjectModel.WomensAccessory" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardobeProjectModel.WomensBottom" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardobeProjectModel.WomensOutfit" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardobeProjectModel.WomensSho" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardobeProjectModel.WomensTop" Width="1.5" PointX="0.75" PointY="12.25" IsExpanded="true" />
+        <AssociationConnector Association="WardobeProjectModel.FK_MensOutfits_MensAccessories" ManuallyRouted="false" />
+        <AssociationConnector Association="WardobeProjectModel.FK_MensOutfits_MensBottoms" ManuallyRouted="false" />
+        <AssociationConnector Association="WardobeProjectModel.FK_MensOutfits_MensShoes" ManuallyRouted="false" />
+        <AssociationConnector Association="WardobeProjectModel.FK_MensOutfits_MensTops" ManuallyRouted="false" />
+        <AssociationConnector Association="WardobeProjectModel.FK_WomensOutfits_WomensAccessories" ManuallyRouted="false" />
+        <AssociationConnector Association="WardobeProjectModel.FK_WomensOutfits_WomensBottoms" ManuallyRouted="false" />
+        <AssociationConnector Association="WardobeProjectModel.FK_WomensOutfits_WomensShoes" ManuallyRouted="false" />
+        <AssociationConnector Association="WardobeProjectModel.FK_WomensOutfits_WomensTops" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

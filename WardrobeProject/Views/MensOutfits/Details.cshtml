@@ -1,0 +1,50 @@
+﻿@model WardrobeProject.Models.MensOutfit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 id="h2-ma">Details</h2>
+
+
+    <h4>Men's Outfit Items</h4>
+    <hr />
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <h3 id="detail-outfit"> @Html.DisplayFor(model => model.MensAccessory.Name)</h3>
+
+            <div class="images">
+                <img src="@Html.DisplayFor(model => model.MensAccessory.Photo)" alt="Alternate Text" />
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3 id="detail-outfit"> @Html.DisplayFor(model => model.MensTop.Name)</h3>
+
+            <div class="images">
+                <img src="@Html.DisplayFor(model => model.MensTop.Photo)" alt="Alternate Text" />
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3 id="detail-outfit"> @Html.DisplayFor(model => model.MensBottom.Name)</h3>
+
+            <div class="images">
+                <img src="@Html.DisplayFor(model => model.MensBottom.Photo)" alt="Alternate Text" />
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h3 id="detail-outfit"> @Html.DisplayFor(model => model.MensSho.Name)</h3>
+
+            <div class="images">
+                <img src="@Html.DisplayFor(model => model.MensSho.Photo)" alt="Alternate Text" />
+            </div>
+        </div>
+    </div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MensOutfitsID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |
+    @Html.ActionLink("Back to List", "Index") <img src="https://png.icons8.com/ultraviolet/20/000000/circled-left.png">
+</p>
