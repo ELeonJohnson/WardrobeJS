@@ -11,48 +11,53 @@
 <body>
 
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">@Html.ActionLink("Outfit Central", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-default">
+           
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">@Html.ActionLink("Outfit Central", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Men <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">@Html.ActionLink("Accessories", "Index", "MensAccessories")</a></li>
+                                <li><a href="#">@Html.ActionLink("Bottoms", "Index", "MensBottoms")</a></li>
+                                <li><a href="#">@Html.ActionLink("Shoes", "Index", "MensShoes")</a></li>
+                                <li><a href="#">@Html.ActionLink("Tops", "Index", "MensTops")</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">@Html.ActionLink("Outfits", "Index", "MensOutfits")</a></li>
+                            </ul>
+                        </li>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Men
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Accessories", "Index", "MensAccessories")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Bottoms", "Index", "MensBottoms")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Shoes", "Index", "MensShoes")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Tops", "Index", "MensTops")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Outfits", "Index", "MensOutfits")</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Women
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Accessories", "Index", "WomensAccessories")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Bottoms", "Index", "WomensBottoms")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Shoes", "Index", "WomensShoes")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Tops", "Index", "WomensTops")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Outfits", "Index", "WomensOutfits")</a>
-                        </div>
-                    </li>
-                </ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Women <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">@Html.ActionLink("Accessories", "Index", "WomensAccessories")</a></li>
+                                <li><a href="#">@Html.ActionLink("Bottoms", "Index", "WomensBottoms")</a></li>
+                                <li><a href="#">@Html.ActionLink("Shoes", "Index", "WomensShoes")</a></li>
+                                <li><a href="#">@Html.ActionLink("Tops", "Index", "WomensTops")</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">@Html.ActionLink("Outfits", "Index", "WomensOutfits")</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>   
+              </nav>
             </div>
-        </nav>
-    </div>
-
+        
+       
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p id="footerChange" onmouseover="changeCopy(this);" onmouseout="defaultCopy(this);">&copy; 2018</p>
         </footer>
     </div>
 

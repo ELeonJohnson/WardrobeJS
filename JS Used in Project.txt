@@ -1,0 +1,17 @@
+Javascript Added:
+
+Ad banner in the Home folder, index.cshtml page that allows users to click on the "x" in the top right corner to remove the banner.
+This is the "window.onload = function method".
+
+Also, I added a onclick method called "Redirect(this)" that will confirm the user's choice to redirect or stay on the page.
+This is also in the Home folder, index.cshtml page.
+
+
+On both men's and women's outfits buttons in the Home folder, index.cshtml page,two functionm (bigText(x) and normalText(x)) 
+works when a user mouseover or mouseout the buttons. The function changes the color and size of text.
+
+
+In the Shared folder, _Layout.cshtml page, my p tag in the footer section has an id of "footerChange" and two functions (changeCopy(this) and defaultCopy(this))\
+which changes the text of the paragraph when a user hovers over it.
+
+Using the drag event in MensOutfit index. Users should be able to mix and matct items on the page. (Does not fully work.)
